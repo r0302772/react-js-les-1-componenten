@@ -18,7 +18,7 @@ const ExerciseTitle = ({title}) => {
     )
 }
 
-const Exercise = ({title, background}) => {
+const Exercise = ({title, background, children}) => {
     const exerciseStyle = {
         boxShadow: "7px 2px 8px 1px rgba(18,89,46,0.67)",
         backgroundColor: background || "#EEEEEE",
@@ -30,6 +30,7 @@ const Exercise = ({title, background}) => {
     return (
         <div style={exerciseStyle}>
             <ExerciseTitle title={title}/>
+            {children}
         </div>
     )
 }
