@@ -5,6 +5,7 @@ import "./main.css"
 import ExerciseOne from "./components/exerciseOne/ExerciseOne.jsx";
 import ExerciseTwo from "./components/exerciseTwo/ExerciseTwo.jsx";
 import ExerciseThree from "./components/exerciseThree/ExerciseThree.jsx";
+import ExerciseFour from "./components/exerciseFour/ExerciseFour.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -17,7 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Exercise title={'Exercise 3: Progressbar'}>
             <ExerciseThree/>
         </Exercise>
-        <Exercise title={'Exercise 4: Number grid'} background={'#77EEEE'}></Exercise>
+        <Exercise title={'Exercise 4: Number grid'} background={'#77EEEE'}>
+            <ExerciseFour/>
+        </Exercise>
         <Exercise title={'Exercise 5: Comment Card'}></Exercise>
     </StrictMode>
 )
